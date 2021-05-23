@@ -3,4 +3,45 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
          version="4.0">
+    <servlet>
+        <servlet-name>ListItemServlet</servlet-name>
+        <servlet-class>controller.ListItemServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ListItemServlet</servlet-name>
+        <url-pattern>/item</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>CreateItemServlet</servlet-name>
+        <servlet-class>controller.CreateItemServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>CreateItemServlet</servlet-name>
+        <url-pattern>/item/create</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>EditItemServlet</servlet-name>
+        <servlet-class>controller.EditItemServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>EditItemServlet</servlet-name>
+        <url-pattern>/item/edit</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>DeleteItemServlet</servlet-name>
+        <servlet-class>controller.DeleteItemServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DeleteItemServlet</servlet-name>
+        <url-pattern>/item/delete</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>TestServlet</servlet-name>
+        <servlet-class>controller.TestServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>TestServlet</servlet-name>
+        <url-pattern>/test</url-pattern>
+    </servlet-mapping>
 </web-app>
